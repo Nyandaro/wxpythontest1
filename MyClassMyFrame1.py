@@ -12,11 +12,9 @@ class MyClassMyFrame1(test1.MyFrame1):
         test1.MyFrame1.__init__(self, parent)
 
         # イベント処理時、どのメソッドを呼び出すかを登録する
-
         self.m_button1.Bind(wx.EVT_BUTTON, self.OnButtonPress)
 
     # イベント処理を記載
-
     def OnButtonPress(self, event):
         zzz = a2.streamcheck()
         self.m_textCtrl1.SetLabel(zzz)
